@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "accounts": [
+    {
+      "id": "demo-a",
+      "label": "Demo Account A",
+      "email": "alex@example.com",
+      "provider": "mock",
+      "mock": { "fixture": "demo-a" },
+      "send": { "enabled": true }
+    },
+    {
+      "id": "demo-b",
+      "label": "Demo Account B",
+      "email": "blair@example.org",
+      "provider": "mock",
+      "mock": { "fixture": "demo-b" },
+      "send": { "enabled": true }
+    }
+  ]
+}
