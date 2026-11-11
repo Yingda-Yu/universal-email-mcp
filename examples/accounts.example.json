@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "accounts": [
+    {
+      "id": "netease-a",
+      "label": "NetEase Enterprise (template)",
+      "email": "alice@corp.example",
+      "provider": "imap-smtp",
+      "preset": "netease-enterprise",
+      "username": "alice@corp.example",
+      "passwordEnv": "NETEASE_ENTERPRISE_PASSWORD",
+      "send": { "enabled": false }
+    },
+    {
+      "id": "alibaba-a",
+      "label": "Alibaba Enterprise (template)",
+      "email": "alice@corp.example",
+      "provider": "imap-smtp",
+      "preset": "alibaba-enterprise",
+      "username": "alice@corp.example",
+      "passwordEnv": "ALIBABA_ENTERPRISE_PASSWORD",
+      "send": { "enabled": false }
+    },
+    {
+      "id": "tencent-a",
+      "label": "Tencent Exmail (template)",
+      "email": "alice@corp.example",
+      "provider": "imap-smtp",
+      "preset": "tencent-enterprise",
+      "username": "alice@corp.example",
+      "passwordEnv": "TENCENT_ENTERPRISE_PASSWORD",
+      "send": { "enabled": false }
+    },
+    {
+      "id": "qq-a",
+      "label": "QQ Mail (template)",
+      "email": "alice@qq.example",
+      "provider": "imap-smtp",
+      "preset": "qq",
+      "username": "alice@qq.example",
+      "passwordEnv": "QQ_MAIL_AUTH_CODE",
+      "send": { "enabled": false }
+    },
+    {
+      "id": "netease-163-a",
+      "label": "163 Mail (template)",
+      "email": "alice@163.example",
+      "provider": "imap-smtp",
+      "preset": "netease-163",
+      "username": "alice@163.example",
+      "passwordEnv": "NETEASE_163_AUTH_CODE",
+      "send": { "enabled": false }
+    },
+    {
+      "id": "netease-126-a",
+      "label": "126 Mail (template)",
+      "email": "alice@126.example",
+      "provider": "imap-smtp",
+      "preset": "netease-126",
+      "username": "alice@126.example",
+      "passwordEnv": "NETEASE_126_AUTH_CODE",
+      "send": { "enabled": false }
+    },
+    {
+      "id": "internal-a",
+      "label": "Custom internal server (template)",
+      "email": "alice@internal.example",
+      "provider": "imap-smtp",
+      "preset": "custom",
+      "username": "alice@internal.example",
+      "passwordEnv": "INTERNAL_MAIL_PASSWORD",
+      "imap": {
+        "host": "mail.internal.example",
+        "port": 993,
+        "secure": true,
+        "requireTls": true
+      },
+      "smtp": {
+        "host": "mail.internal.example",
+        "port": 465,
+        "secure": true,
+        "requireTls": true
+      },
+      "send": { "enabled": false }
+    }
+  ]
+}
